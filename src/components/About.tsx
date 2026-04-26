@@ -3,10 +3,10 @@ import { GraduationCap, Briefcase, Award, FolderGit2 } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: GraduationCap, label: "Education", value: "M.Tech Data Science" },
-    { icon: Briefcase, label: "Experience", value: "Full Stack Developer" },
-    { icon: Award, label: "Certifications", value: "9+" },
-    { icon: FolderGit2, label: "Projects", value: "10+" },
+    { icon: GraduationCap, label: "Education", value: "B.Tech EEE" },
+    { icon: Briefcase, label: "Role", value: "Java Full Stack" },
+    { icon: Award, label: "Certifications", value: "4+" },
+    { icon: FolderGit2, label: "Projects", value: "5+" },
   ];
 
   return (
@@ -17,11 +17,10 @@ const About = () => {
             About <span className="text-primary">Me</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Passionate developer combining creativity with technical expertise
+            Full Stack Developer blending Java backend expertise with modern AI tools
           </p>
         </div>
 
-        {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           {stats.map((stat, index) => (
             <Card
@@ -33,7 +32,7 @@ const About = () => {
                   <stat.icon className="h-7 w-7 text-primary" />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold">{stat.value}</div>
+                  <div className="text-xl font-bold">{stat.value}</div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
                 </div>
               </div>
@@ -41,22 +40,23 @@ const About = () => {
           ))}
         </div>
 
-        {/* Description */}
         <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground leading-relaxed">
           <p>
-            Currently pursuing an M.Tech in Data Science with a 100% scholarship, I am passionate about 
-            leveraging technology to solve real-world challenges. My journey combines a strong foundation 
-            in Full Stack Development with advanced expertise in Machine Learning and AI.
+            I'm <span className="text-foreground font-semibold">Aman Kumar</span>, a Java Full Stack Developer
+            from Muzaffarpur, Bihar. I graduated in Electrical and Electronics Engineering from BP Mandal
+            College of Engineering (Aryabhatta Knowledge University, Patna) in 2022, and pivoted into
+            software with a Java Full Stack certification from JSpiders Bangalore.
           </p>
           <p>
-            As a certified Java Full Stack Developer, I have hands-on experience with Java, Spring Boot, 
-            React.js, Node.js, and Python. My technical toolkit spans across both frontend and backend 
-            technologies, enabling me to build comprehensive solutions from concept to deployment.
+            My toolkit spans <span className="text-primary">Java, Spring Boot, Hibernate, J2EE</span> on the
+            backend and <span className="text-primary">React.js, JavaScript, HTML, CSS, Tailwind</span> on
+            the frontend. I also work with <span className="text-primary">Python, Machine Learning,
+            and modern AI tools</span> like Google Gemini and Supabase real-time services to build smart,
+            data-driven applications.
           </p>
           <p>
-            I am particularly drawn to projects that integrate AI and automation, as demonstrated by my 
-            work on innovative solutions. I'm eager to contribute to cutting-edge projects where 
-            data-driven insights meet elegant software design.
+            I'm passionate about writing clean, maintainable code, learning new technologies, and shipping
+            products that combine strong engineering with AI-powered intelligence.
           </p>
         </div>
       </div>

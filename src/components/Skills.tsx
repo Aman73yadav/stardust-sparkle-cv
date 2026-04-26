@@ -5,19 +5,19 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend Development",
-      skills: ["React.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"],
+      skills: ["React.js", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Three.js"],
     },
     {
       title: "Backend Development",
-      skills: ["Java", "Spring Boot", "Node.js", "Express.js", "Python", "REST APIs"],
+      skills: ["Java", "Spring Boot", "J2EE", "Hibernate", "Spring MVC", "REST APIs", "JUnit"],
     },
     {
-      title: "Data Science & AI",
-      skills: ["Machine Learning", "Deep Learning", "Python", "TensorFlow", "scikit-learn", "Pandas", "NumPy"],
+      title: "AI / ML & Data",
+      skills: ["Python", "Machine Learning", "Google Gemini AI", "Data Structures", "Problem Solving"],
     },
     {
       title: "Database & Tools",
-      skills: ["MySQL", "PostgreSQL", "MongoDB", "Git", "GitHub", "Docker", "AWS"],
+      skills: ["MySQL", "Supabase", "JDBC", "Git", "GitHub", "Maven", "Vercel"],
     },
   ];
 
@@ -29,7 +29,7 @@ const Skills = () => {
             Technical <span className="text-primary">Skills</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            A comprehensive toolkit spanning full-stack development, data science, and AI technologies
+            Java backend, modern frontend, and AI tooling
           </p>
         </div>
 

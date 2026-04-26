@@ -28,7 +28,7 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#home" className="text-2xl font-bold">
-          <span className="text-primary">Portfolio</span>
+          <span className="text-primary">Aman</span> Kumar
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -41,8 +41,8 @@ const Navigation = () => {
               {item.name}
             </a>
           ))}
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            Let's Talk
+          <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <a href="#contact">Let's Talk</a>
           </Button>
         </div>
       </div>
