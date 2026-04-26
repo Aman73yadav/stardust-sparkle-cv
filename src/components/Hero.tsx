@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import { useSiteSettings } from "@/hooks/useSiteSettings";
 
 const Hero = () => {
+  const { profilePhotoUrl, resumeUrl, resumeFilename } = useSiteSettings();
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 py-20">
       <div className="absolute inset-0 overflow-hidden">
