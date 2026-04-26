@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import { useSiteSettings } from "@/hooks/useSiteSettings";
 
 const Hero = () => {
+  const { profilePhotoUrl, resumeUrl, resumeFilename } = useSiteSettings();
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 py-20">
       <div className="absolute inset-0 overflow-hidden">
@@ -42,8 +43,8 @@ const Hero = () => {
                 Get in Touch
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-primary/50 hover:bg-primary/10">
-              <a href="/Aman_Kumar_Resume.pdf" download>
+            <Button asChild size="lg" variant="outline" className="border-primary/50 hover:bg-primary/10" disabled={!resumeUrl}>
+              <a href={resumeUrl || "#"} download={resumeFilename} target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
               </a>
@@ -86,7 +87,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl group-hover:bg-primary/30 transition-all duration-500" />
             <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/30 box-glow">
               <img
-                src={profilePhoto}
+                src={profilePhotoUrl}
                 alt="Aman Kumar - Full Stack Developer"
                 className="w-full h-full object-cover"
               />
